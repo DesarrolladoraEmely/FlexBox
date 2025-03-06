@@ -1,0 +1,50 @@
+.container-1,
+.container-2{
+    margin: 10px auto;
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+    background-color: gainsboro;
+    /*activar flexbox*/
+    display: flex;
+    /* flex-direction: row; fila */
+    /*justify-content: center; /*eje x*/
+    /*align-items: flex-start; /*eje y*/
+    /* flex-wrap: wrap; */ /*oranizar muchos elementos*/
+    /*align-content: center; /*ubicar muchos elementos*/
+    flex-flow: row wrap;
+
+}
+.container-2{
+    display: flex;
+    /* flex-direction: column; */ /*columna */
+    /*justify-content: center; /*eje y*/
+    /*align-items: flex-start; /*eje x*/
+    /* flex-wrap: wrap; */ /*oranizar muchos elementos*/
+    /*align-content: center; /*ubicar muchos elementos*/
+    flex-flow: column wrap;
+
+}
+.container-1 .item-1,
+.container-1 .item-2,
+.container-1 .item-3,
+.container-2 .item-1,
+.container-2 .item-2,
+.container-2 .item-3{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+.item-1{
+    background-color: red;
+    align-self: flex-start; /*para ubicar un items independientes*/
+}
+.item-2{
+    background-color: green;
+    order: 0; /*reorganiza los items*/
+    align-self: center; /*para ubicar un items independientes*/
+}
+.item-3{
+    background-color: blue;
+    align-self: flex-end; /*para ubicar un items independientes*/
+}
